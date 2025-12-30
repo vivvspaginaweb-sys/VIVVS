@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "Tu página web profesional en 5 días. Sin complicaciones.",
+    "subtitle": "Diseño moderno, responsive y optimizado para la conversión. Enfócate en tu negocio, nosotros nos encargamos del resto.",
+    "cta_text": "¡Quiero mi web en 5 días!",
+    "image": "/images/hero.jpg"
+  },
+  "problema": {
+    "title": "¿Te sientes identificado?",
+    "p1": "Muchos emprendedores y pequeños negocios se encuentran con el mismo problema: necesitan una presencia online profesional, pero el proceso es lento, costoso y frustrante.",
+    "p2": "Meses de desarrollo, presupuestos que se disparan y un resultado final que no cumple las expectativas. Tu tiempo es oro, y tu web no debería ser un dolor de cabeza.",
+    "image": "/images/problema.jpg"
+  },
+  "solucion": {
+    "title": "VIVVS: La solución que estabas esperando",
+    "p": "Hemos simplificado el proceso de creación web para que puedas tener una página profesional, moderna y optimizada en **solo 5 días**. Sin sorpresas, sin costes ocultos.",
+    "benefits": [
+      { "item": "Diseño 100% responsive", "icon": "fa-mobile-alt" },
+      { "item": "Optimización SEO básica", "icon": "fa-search" },
+      { "item": "Hosting gratuito (1 año)", "icon": "fa-server" },
+      { "item": "Certificado SSL (HTTPS)", "icon": "fa-lock" }
+    ]
+  },
+  "metodo": {
+    "title": "Nuestro Método: Tu Web en 5 Días",
+    "steps": [
+      { "day": "Día 1: Descubrimiento", "description": "Reunión inicial para entender tu negocio, objetivos y público. Definimos la estructura y el contenido." },
+      { "day": "Día 2: Diseño y Contenido", "description": "Te enviamos el diseño base y el copywriting. Tú revisas y apruebas." },
+      { "day": "Día 3: Desarrollo", "description": "Convertimos el diseño en código HTML/CSS/JS. Se integra el contenido aprobado." },
+      { "day": "Día 4: Pruebas y Ajustes", "description": "Realizamos pruebas de rendimiento y usabilidad. Aplicamos tus últimos ajustes." },
+      { "day": "Día 5: Lanzamiento", "description": "Despliegue final en tu dominio y entrega de la documentación." }
+    ]
+  },
+    "planes": {
+    "title": "Elige el Plan Perfecto para tu Negocio",
+    "basico": {
+      "name": "Plan Básico",
+      "price": "<del style='font-size: 1.5rem; color: #999; text-decoration-thickness: 3px;'>499€</del> <strong style='font-size: 2.5rem; background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: block; margin-top: 0.5rem;'>199€</strong> <span style='color: #FF6B35; font-weight: bold; font-size: 1.2rem;'>-60%</span>",
+      "features": [
+        { "item": "Diseño Web Profesional" },
+        { "item": "11 Secciones de Contenido" },
+        { "item": "Integración de Google Analytics" },
+        { "item": "Soporte 30 días" }
+      ]
+    },
+    "premium": {
+      "name": "Plan Premium",
+      "price": "<del style='font-size: 1.5rem; color: #999; text-decoration-thickness: 3px;'>799€</del> <strong style='font-size: 2.5rem; background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: block; margin-top: 0.5rem;'>300€</strong> <span style='color: #FF6B35; font-weight: bold; font-size: 1.2rem;'>-60%</span>",
+      "features": [
+        { "item": "Todo lo del Plan Básico" },
+        { "item": "Dominio .com o .es (1 año)" },
+        { "item": "Mantenimiento y Actualizaciones" },
+        { "item": "Integración de CMS Estático" }
+      ]
+    }
+  },
+  "testimonios": {
+    "title": "Lo que dicen nuestros clientes",
+    "list": [
+      { "name": "María G.", "role": "Emprendedora Digital", "comment": "Increíble la rapidez y la calidad. En 5 días tenía mi web lista y funcionando. ¡Totalmente recomendable!" },
+      { "name": "Javier P.", "role": "CEO, Tech Solutions", "comment": "El diseño es moderno y la velocidad de carga es impresionante. Un servicio profesional y sin complicaciones." },
+      { "name": "Ana R.", "role": "Diseñadora Freelance", "comment": "La mejor inversión para mi portafolio. El proceso fue transparente y el resultado superó mis expectativas." }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "questions": [
+      { "question": "¿Qué incluye el servicio de VIVVS?", "answer": "El servicio incluye el diseño, desarrollo, copywriting, imágenes, hosting gratuito por un año y soporte inicial." },
+      { "question": "¿Necesito tener un dominio propio?", "answer": "No es necesario. Puedes usar un subdominio gratuito de Netlify o contratar el Plan Premium que incluye un dominio .com o .es por un año." },
+      { "question": "¿Puedo actualizar el contenido yo mismo?", "answer": "Sí. Con la integración del CMS Estático (Plan Premium), podrás editar textos e imágenes de forma sencilla sin tocar el código." }
+    ]
+  }
+}

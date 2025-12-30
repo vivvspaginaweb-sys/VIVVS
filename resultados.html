@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Auditoría Web - VIVVS</title>
+    <meta name="description" content="Explora los resultados de auditorías web, tendencias de errores comunes y soluciones implementadas por VIVVS.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="resultados-styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="images/vivvs-logo-tricolor.png" alt="VIVVS" class="logo-navbar" style="height: 50px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#resultados">Resultados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#planes">Planes</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-cta-nav" href="https://calendly.com/u5888519266/30min" target="_blank">
+                            <i class="fas fa-calendar-alt me-2"></i>Reservar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-resultados">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="hero-title mb-4">Análisis de Auditorías Web</h1>
+                    <p class="hero-subtitle mb-4">Explora datos en tiempo real, entiende las tendencias y descubre las soluciones más efectivas</p>
+                    <div class="hero-features">
+                        <span class="feature-badge"><i class="fas fa-chart-line"></i> Datos Interactivos</span>
+                        <span class="feature-badge"><i class="fas fa-download"></i> Exportable</span>
+                        <span class="feature-badge"><i class="fas fa-share-alt"></i> Compartible</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section id="resultados" class="resultados-section py-5">
+        <div class="container">
+            <!-- Estadísticas Generales -->
+            <div class="stats-grid mb-5">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Errores Críticos Identificados</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Tasa de Solución Implementada</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-number">45%</div>
+                        <div class="stat-label">Mejora Promedio de Velocidad</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-chart-pie"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Webs Auditadas</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráficos Interactivos -->
+            <div class="row g-4 mb-5">
+                <!-- Gráfico 1: Distribución de Errores por Categoría -->
+                <div class="col-lg-6">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Distribución de Errores por Categoría</h3>
+                        <canvas id="errorCategoryChart"></canvas>
+                        <p class="chart-description">Los errores de rendimiento y SEO son los más comunes en sitios web actuales.</p>
+                    </div>
+                </div>
+
+                <!-- Gráfico 2: Impacto en Conversiones -->
+                <div class="col-lg-6">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Impacto en Conversiones (%)</h3>
+                        <canvas id="impactChart"></canvas>
+                        <p class="chart-description">El impacto acumulativo de estos errores puede reducir conversiones hasta un 73%.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabla Detallada de Errores -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Análisis Detallado: 15 Errores Críticos</h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover error-table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Error</th>
+                                        <th>Categoría</th>
+                                        <th>Severidad</th>
+                                        <th>Impacto</th>
+                                        <th>Solución</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="errorTableBody">
+                                    <!-- Populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico 3: Tendencias Temporales -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Tendencias: Errores Detectados en Últimos 12 Meses</h3>
+                        <canvas id="trendsChart"></canvas>
+                        <p class="chart-description">Observa cómo evolucionan los errores más comunes a lo largo del tiempo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Acciones -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="action-section">
+                        <h3 class="mb-4">¿Necesitas una Auditoría Completa?</h3>
+                        <p class="mb-4">Descarga nuestro PDF gratuito con las 15 soluciones detalladas y comienza a mejorar tu web hoy mismo.</p>
+                        <div class="d-flex gap-3 flex-wrap justify-content-center">
+                            <a href="index.html#lead-magnet" class="btn btn-cta btn-lg">
+                                <i class="fas fa-download me-2"></i>Descargar PDF Gratis
+                            </a>
+                            <a href="https://calendly.com/u5888519266/30min" target="_blank" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-calendar-alt me-2"></i>Agendar Consulta
+                            </a>
+                            <button class="btn btn-outline-secondary btn-lg" onclick="exportData()">
+                                <i class="fas fa-share-alt me-2"></i>Compartir Resultados
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2024 VIVVS. Todos los derechos reservados. | <a href="mailto:vivvspaginaweb@gmail.com" style="color: inherit; text-decoration: none;">vivvspaginaweb@gmail.com</a></p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Auditoría Web Profesional en Sevilla 🚀</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="resultados-script.js"></script>
+</body>
+</html>

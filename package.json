@@ -1,0 +1,14 @@
+{
+  "name": "vivvs-landing",
+  "version": "1.0.0",
+  "description": "Landing page para VIVVS migrada a Vercel",
+  "main": "index.html",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "echo 'No build step needed'",
+    "start": "serve ."
+  }
+}
